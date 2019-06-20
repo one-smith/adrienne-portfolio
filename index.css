@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background-color: grey;
+  margin: 0;
+  color: white;
+}
+
+nav p {
+  float: left;
+  padding-left: 15px;
+}
+
+nav a{
+  text-decoration: none;
+  color: white;
+  padding-right: 15px;
+  padding-top: 20px;
+  float: right;
+}
+
+header {
+  min-height: 100px;
+  padding-top: 15%;
+  padding-bottom: 3%;
+}
+
+section {
+  min-height: 100px;
+  background-color: light-grey;
+  padding: 10% 0;
+}
+
+section:nth-child(even) {
+  background-color: grey;
+}
+
+.mypic {
+  border-radius: 50%;
+}
+
+.projects {
+  display: inline-block;
+  border: 2px solid black;
+  height: 620px;
+  text-align: left;
+  width: 33%;
+  margin: 0;
+}
+
+.project-title, .contact-title {
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+
+.screenshots {
+  width: 100%;
+}
