@@ -92,12 +92,15 @@ section {
   margin-bottom: 40px;
 }
 
+.screenshots {
+  width: 100%;
+}
+
 .projects a:link, .contact-info a:link {
   color: #1C5936;
 }
 
 .projects a:visited, .contact-info a:visited {
-  /* color: #F2B90F; */
   color: #F29494;
 }
 
@@ -131,4 +134,8 @@ section {
     padding: 0 20px;
     margin: 20px 5px;
   }  
+
+  .screenshots {
+    width: 50%;
+  }
 }
