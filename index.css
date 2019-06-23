@@ -3,12 +3,20 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
+  font-family: 'Josefin Slab', serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-size: 16px;
   line-height: 1.5;
   text-align: center;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  background-color: #FEF6E8;
 }
 
+.name {
+  font-size: 40px;
+  font-weight: bold;
+}
 
 nav {
   position: fixed;
@@ -16,9 +24,9 @@ nav {
   left: 0;
   right: 0;
   z-index: 10;
-  background-color: grey;
+  background-color: #1C5936;
   margin: 0;
-  color: white;
+  color: #F2B90F;
   height: 50px;
   font-size: 14px;
 }
@@ -31,7 +39,7 @@ nav p {
 
 nav a{
   text-decoration: none;
-  color: white;
+  color: #F2B90F;
   padding-right: 15px;
   float: right;
   margin-top: 14px;
@@ -45,16 +53,12 @@ header {
 
 section {
   min-height: 100px;
-  background-color: light-grey;
-  padding: 10% 0;
-}
-
-section:nth-child(even) {
-  background-color: grey;
+  padding: 15px 5px;
 }
 
 .mypic {
   border-radius: 50%;
+  border: 3px solid #F2B90F;
 }
 
 .project-group {
@@ -64,24 +68,10 @@ section:nth-child(even) {
   height: 100%;
 }
 
-
 .projects {
   padding: 0 25px;
   margin: 5px 10px;
-}
-/* .projects {
-  /* width: 100%; */
-  /* height: 800px; */
-  /* margin: auto; */
-  /* flex: 0 0 100%; */
-  /* flex-wrap: wrap; */
-  /* flex-direction: column;
-  height: 100%; */
-  /* justify-content: flex-start; */
-/* } */
-
-.projects {
-  border: 2px solid black;
+  border: 2px solid #1C5936;
   min-height: 100px;
   padding-top: 0;
   padding-bottom: 0;
@@ -90,19 +80,25 @@ section:nth-child(even) {
 .project-title {
   padding-top: 30px;
   padding-bottom: 0;
-  height: 15px;
 }
 
 .contact-title {
-  padding-top: 30px;
+  padding-top: 70px;
+  padding-bottom: 0;
 }
 
 .contact-info {
+  margin-top: 10px;
   margin-bottom: 40px;
 }
 
-#about {
-  padding: 10% 10%;
+.projects a:link, .contact-info a:link {
+  color: #1C5936;
+}
+
+.projects a:visited, .contact-info a:visited {
+  /* color: #F2B90F; */
+  color: #F29494;
 }
 
 @media only screen and (min-width: 400px) {
@@ -111,7 +107,7 @@ section:nth-child(even) {
   }
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 700px) {
   nav {
     font-size: 20px; 
   }
@@ -128,7 +124,6 @@ section:nth-child(even) {
     display: flex;
     padding: 0;
     flex-direction: row;
-    /* height: 100%; */
   }
   
   .col {
