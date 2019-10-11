@@ -1,52 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Portfolio Wireframe</title>
-  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="index.css">
-</head>
-<body>
-  <header>
-    <nav role="navigation">
-      <p>Adrienne Smith</p>
-      <a href="#contact">Contact</a> 
-      <a href="#projects">Projects</a> 
-      <a href="#about">About</a> 
-    </nav>
-  </header>
-  <main role="main">
-    <section id="headline">
-      <img src="./IMG_2154.jpg" alt="Picture of me" class="mypic"><br>
-      <p class="name">Hi, I'm Adrienne.</p>I'm an aspiring web developer with a background in Family and Child Development.</section>
-    </section>
-      <section id="about"> 
-      I like doing practical things in life. I also love puzzles. I think coding combines those things in an interesting 
-      and satisfying way. I like that at the end of my hard work, there is a product that people can use, which will hopefully 
-      help them in some way.
-      When I'm not coding I spend my time sewing my own clothes, reading adventure books from the turn of the century, swimming in 
-      rivers, and learning to play music. </section> 
-    <section class="project-title" id="projects">Projects</section>
-      <section class="project-group">
-        <p class="projects col">
-          <img src="./quiz-app-pic.jpg" alt="Quiz App" class="screenshots"><br>
-          Quiz App <br>
-          This app will generate 5 random multiple-choice trivia questions, keep track of score and progress through the quiz. When
-          the quiz is done, the user will see their final score and they will be able to play again without having to reload the site.<br><br>
-          Technology Stack:<br>
-            HTML
-            CSS
-            JavaScript
-            jQuery <br>
-          <a href="https://github.com/thinkful-ei-emu/adrienne-eugene-quiz-app-2">Repo</a>
-          <!-- <a>Live</a>  -->
-        </p>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Adrienne Smith Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Limelight&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="index.css">
+  </head>
+  <body>
+    <header>
+      <nav role="navigation">
+        <p class="nav-name">Adrienne Smith</p>
+        <a href="#contact">Contact</a> 
+        <a href="#projects">Projects</a> 
+        <a href="#about">About</a> 
+      </nav>
+    </header>
+    <main role="main">
+      <div class="img-box"><img class="mypic" src="./headshot.jpg" alt="Picture of me"></div>
+      <section class="headline">
+        <h1 id="about" class="name">Hi, I'm Adrienne</h1>
+        <p>I'm an aspiring web developer with a background in Family and Child Development.</p>
       </section>
-    <section class="contact-title" id="contact">Contact</section>
-      <p class="contact-info"><a href="mailto: agsmith046@gmail.com">email</a> <a href="https://github.com/one-smith">github</a> <a href="www.linkedin.com/in/adrienne-smith-9a55b2127">linkedin</a></p>
-  </main>
-</body>
+      <p class="about"> 
+        I like doing practical things in life. I also love puzzles. I think coding combines those things in an interesting 
+        and satisfying way. I like that at the end of my hard work, there is a product that people can use, which will hopefully 
+        help them in some way.
+        When I'm not coding I spend my time sewing my own clothes, reading adventure books from the turn of the century, swimming in 
+        rivers, and learning to play music. 
+      </p> 
+      <h2 id="projects">Projects</h2>
+      <hr>
+      <section>
+        <ul class="projects">
+          <li class="project">
+            <div class="screenshot-right"><img class="screenshot" src="./travel-companion.png" alt="Travel Companion"></div>
+            <div class="description-left">
+              <h3>Travel Companion</h3>
+              <p class="desc">
+                Travel Companion users can create an account to keep track of items in their packing list and their transportation 
+                information.
+              </p>
+              <ul class="tech">
+              Technology Stack:
+                <li>React</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Node</li>
+                <li>Express</li>
+                <li>PostgreSQL</li>
+                <li>Mocha and Chai</li>
+              </ul>
+              <a href="https://github.com/thinkful-ei-emu/adrienne-capstone1-client">Client Repo</a>
+              <a href="https://github.com/thinkful-ei-emu/adrienne-capstone1-server">Server Repo</a>
+              <a href="https://travel-companion.now.sh/">Live</a> 
+            </div>
+          </li>
+          <li class="project">
+            <div class="screenshot-left"><img class="screenshot" src="./learning-latin.png" alt="Learning Latin"></div>
+            <div class="description-right">
+              <h3>Learning Latin</h3>
+              <p class="desc">
+                This app helps users learn 10 Latin words with the use of our spaced repetition algorithm.
+              </p>
+              <ul class="tech">
+              Technology Stack:
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Express</li>
+                <li>Node.js</li>
+              </ul>
+              <a href="https://github.com/WhitneySamWallace/spaced-repetition">Client Repo</a>
+              <a href="https://github.com/WhitneySamWallace/spaced-repetition-api">Server Repo</a>
+              <a href="https://w-a-a-learning-latin.now.sh">Live</a> 
+            </div>
+          </li>
+          <li class="project">
+            <div class="screenshot-right"><img class="screenshot" src="./catch-a-ride.png" alt="Catch A Ride"></div>
+            <div class="description-left">
+              <h3>Catch-A-Ride</h3>
+              <p class="desc">
+                Catch-A-Ride is a useful tool to connect with people and share rides.
+                The tool allows people to find others heading into the same location and effectively carpool together.
+              </p>
+              <ul class="tech">
+              Technology Stack:
+                <li>React</li>
+                <li>Express</li>
+                <li>Node</li>
+                <li>PostgreSQL</li>
+                <li>JavaScript</li>
+                <li>Google APIs</li>
+                <li>Google Authentication</li>
+                <li>Nodemailer</li>
+              </ul>
+              <a href="https://github.com/thinkful-ei-emu/Catch-A-Ride-CLIENT">Client Repo</a>
+              <a href="https://github.com/thinkful-ei-emu/Catch-A-Ride-SERVER">Server Repo</a>
+              <a href="https://catch-a-ride.now.sh">Live</a> 
+            </div>
+          </li>
+        </ul>
+      </section>
+      <h2 id="contact">Contact</h2>
+      <hr>
+        <p class="contact-info">
+          <a href="mailto: agsmith046@gmail.com">email</a>
+          <a href="https://github.com/one-smith">github</a>
+          <a href="www.linkedin.com/in/adrienne-smith-9a55b2127">linkedin</a>
+      </p>
+    </main>
+  </body>
 </html>
