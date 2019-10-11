@@ -20,6 +20,8 @@ body {
 .project {
   margin: 0 auto;
   margin-bottom: 20px;
+  border: 1px solid #2F394D;
+  border-radius: 5px;
 }
 
 .project:nth-child(odd) {
@@ -98,7 +100,7 @@ header {
   margin-bottom: 40px;
 }
 
- .description-left, .description-right {
+.description-left, .description-right {
   margin: 0 auto;
 }
 
