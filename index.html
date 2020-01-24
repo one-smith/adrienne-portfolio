@@ -10,12 +10,30 @@
     <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="menu.css">
     <link rel="icon" type="image/png" href="favicon.png">
   </head>
   <body>
     <header>
-      <nav>
+      <div class="menu-wrap">
+        <input type="checkbox" class="toggler">
+        <div class="hamburger"><div></div></div>
+        <div class="menu">
+          <div>
+            <div>
+              <ul>
+                <li class="first"><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="./resume.pdf" target="_blank">Resume</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class='top-nav'>
         <p class="nav-name">Adrienne Smith</p>
+        <a href="./resume.pdf" target="_blank">Resume</a>
         <a href="#contact">Contact</a> 
         <a href="#projects">Projects</a> 
         <a href="#about">About</a> 
@@ -34,7 +52,6 @@
         When I'm not coding I spend my time sewing my own clothes, reading adventure books from the turn of the century, swimming in 
         rivers, and learning to play music. 
       </p> 
-      <img class='arrow' src='./images/arrow.png' alt='arrow'>
       <h2 id="projects">Projects</h2>
       <hr>
       <section>

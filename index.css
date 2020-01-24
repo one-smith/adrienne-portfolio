@@ -42,26 +42,31 @@ body {
   font-family: 'Limelight', cursive;
 }
 
-nav {
+.top-nav {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 10;
+  z-index: 0;
   background-color: #D1D2F9;
   margin: 0;
   height: 50px;
   font-size: 14px;
 }
 
-.nav-name {
-  font-size: 10px;
-  margin-top: 17px;
-  float: left;
-  padding-left: 15px;
+.top-nav a {
+  visibility: hidden;
 }
 
-nav a, nav a:visited {
+
+.nav-name {
+  font-size: 16px;
+  margin-top: 15px;
+  float: right;
+  padding-right: 15px;
+}
+
+.top-nav a, .top-nav a:visited {
   text-decoration: none;
   padding-right: 15px;
   float: right;
@@ -109,15 +114,15 @@ header {
   width: 100%;
 }
 
-nav a, .projects a:link, .contact-info a:link {
+.top-nav a, .projects a:link, .contact-info a:link {
   color: #2F394D;
 }
 
-nav a:visited, .projects a:visited, .contact-info a:visited {
+.top-nav a:visited, .projects a:visited, .contact-info a:visited {
   color: #304B78;
 }
 
-nav a:hover, .projects a:hover, .contact-info a:hover {
+.top-nav a:hover, .projects a:hover, .contact-info a:hover {
   color: #782A64;
 }
 
@@ -166,12 +171,8 @@ hr {
   margin-bottom: 50px;
 }
 
-.arrow {
-  display: none;
-}
-
 @media only screen and (min-width: 400px) {
-  nav, .nav-name {
+  .top- nav, .nav-name {
     font-size: 16px;
   }
 
@@ -181,6 +182,26 @@ hr {
 }
 
 @media only screen and (min-width: 700px) {
+  .menu-wrap {
+    visibility: hidden;
+  }
+
+  .top-nav {
+    z-index: 10;
+  }
+
+  .top-nav a {
+    visibility: visible;
+    font-size: 16px;
+  }
+
+  .nav-name {
+    font-size: 16px;
+    margin-top: 15px;
+    float: left;
+    padding-left: 15px;
+  }
+
   .mypic {
     margin-left: -90px;
   }
@@ -209,11 +230,11 @@ hr {
 }
 
 @media only screen and (min-width: 800px) {
-  nav, .nav-name {
+  .top-nav, .nav-name {
     font-size: 20px; 
   }
 
-  nav a {
+  .top-nav a {
     padding-right: 15px;
   }
 
@@ -221,7 +242,7 @@ hr {
     padding-left: 15px;
   }
 
-  .nav-name, nav a {
+  .nav-name, .top-nav a {
     margin-top: 10px;
   }
 
@@ -281,27 +302,25 @@ hr {
   }
 
   header {
-    padding-top: 10%;
+    padding-top: 0;
   }
 
   .img-box {
     display: block;
     float: left;
     margin-left: 2%;
-    margin-top: 60px;
+    margin-top: 130px;
   }
 
   .name {
-    padding-top: 30px;
+    margin-top: 50px;
   }
 
   .headline {
-    padding-top: 10px;
+    padding-top: 40px;
   }
 
-  .arrow {
-    display: block;
-    height: 150px;
-    margin-left: 45%;
+  #projects {
+    margin-top: 70px;
   }
 }
