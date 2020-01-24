@@ -158,6 +158,7 @@ hr {
 }
 
 .img-box {
+  z-index: -1;
   display: inline-block;
   position: relative;
   height: 220px;
@@ -320,7 +321,7 @@ hr {
     padding-top: 40px;
   }
 
-  #projects {
-    margin-top: 70px;
+  .project-title {
+    padding-top: 110px;
   }
 }
